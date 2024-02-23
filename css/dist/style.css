@@ -1,0 +1,808 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+}
+.container .vid {
+  display: none;
+  margin-top: 20px;
+}
+.container h1 {
+  font-family: "Pacifico", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+  color: #7c3aed !important;
+  font-size: 35px;
+}
+.container .btn-bgr {
+  background-color: #7c3aed;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white !important;
+}
+.container .btn-color {
+  font-weight: 600;
+  color: #7c3aed !important;
+}
+.container .one {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/Group 4.png");
+  background-size: cover;
+  /* Стили для скрытого меню */
+}
+.container .one .header {
+  display: flex;
+  padding: 30px 100px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.container .one .header a {
+  color: black;
+  font-weight: 600;
+}
+.container .one .header ul {
+  display: flex;
+  gap: 24px;
+}
+.container .one .header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.container .one .header-right {
+  gap: 40px !important;
+}
+.container .one .first {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  width: 62%;
+  gap: 50px;
+}
+.container .one .first-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .one .first-content h2 {
+  font-size: 60px;
+}
+.container .one .first-content p {
+  font-size: 18px;
+}
+.container .one .first-content .btns {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.container .vacs {
+  padding: 70px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.container .vacs-text {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container .vacs-text h3 {
+  font-size: 48px;
+}
+.container .vacs-cards {
+  display: flex;
+  gap: 24px;
+}
+.container .vacs-cards .card {
+  height: min-content;
+  padding: 24px 32px 32px;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px -2px rgba(17, 24, 39, 0.06);
+  box-shadow: 0px 4px 8px -2px rgba(17, 24, 39, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.08);
+}
+.container .vacs-cards .card h4 {
+  padding: 24px 0;
+  font-size: 24px;
+}
+.container .vacs-cards .card p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* количество строк для отображения */
+  -webkit-box-orient: vertical;
+}
+.container .vacs span {
+  width: 80%;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+}
+.container .why {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f7ff;
+}
+.container .why img {
+  width: 50%;
+}
+.container .why-content {
+  padding: 0 100px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .why-content-text {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.container .why-content h3 {
+  font-size: 48px;
+}
+.container .why-content .btns {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 60px;
+}
+.container .plus {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 100px;
+}
+.container .plus .card {
+  max-width: 292px;
+}
+.container .plus .card h3 {
+  padding: 20px 0;
+}
+.container .rev {
+  background-color: rgba(213, 250, 252, 0.5);
+  padding: 126px 100px 70px 206px;
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+.container .rev h3 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.container .rev span {
+  color: gray;
+}
+.container .rev .p {
+  padding: 10px 0 30px;
+}
+.container .rev-card {
+  box-shadow: 0px 2px 4px -2px rgba(17, 24, 39, 0.06);
+  box-shadow: 0px 4px 8px -2px rgba(17, 24, 39, 0.1);
+  background-color: White;
+  border-radius: 8px;
+  padding: 34px;
+  display: flex;
+  gap: 16px;
+}
+.container .rev-card img {
+  height: 13px;
+  width: 16px;
+}
+.container .rev-card .text h4 {
+  margin-top: 24px;
+}
+.container .rev-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.container .rev-left .rev-card {
+  width: 397px;
+}
+.container .rev-right {
+  width: 50%;
+}
+.container .rev-right .rev-card {
+  margin-bottom: 24px;
+}
+.container .rev-right .rev-card:last-child {
+  width: 397px;
+}
+.container .rev .abs {
+  position: absolute;
+  top: 70px;
+  left: 101px;
+}
+.container .about {
+  padding: 80px 100px;
+  display: flex;
+}
+.container .about-left {
+  width: 50%;
+}
+.container .about-left h3 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.container .about-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .about-right .cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.container .about-right .card {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.container .about-right .card img {
+  height: 32px;
+  width: 32px;
+}
+.container .about-right .card h4 {
+  font-size: 36px;
+}
+.container .how {
+  background-color: #7c3aed;
+  padding: 70px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.container .how-text {
+  color: white;
+  width: 41%;
+}
+.container .how-text h3 {
+  font-size: 48px;
+}
+.container .how-cards {
+  display: flex;
+}
+.container .how-cards .card {
+  background-color: white;
+  border-radius: 18px;
+  padding: 24px 24px 34px;
+}
+.container .how-cards .card h4 {
+  padding: 20px 0 8px;
+  font-size: 20px;
+}
+.container .how-cards .card p {
+  font-size: 16px;
+}
+.container .how-cards .arrow {
+  height: fit-content;
+  margin-top: 30px;
+}
+.container .two {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.container .two .abs2 {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+.container .two .sec {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  width: 52%;
+  gap: 50px;
+}
+.container .two .sec-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .two .sec-content h2 {
+  font-size: 60px;
+}
+.container .two .sec-content p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.container .two .sec-content .btns {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 50px 0;
+}
+.container .two .sec .pred {
+  display: flex;
+  gap: 24px;
+}
+.container .two .sec .pred p {
+  color: #374151;
+}
+.container .pop {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 70px 100px;
+}
+.container .pop h3 {
+  font-size: 48px;
+}
+.container .pop-ul {
+  border: 3px solid #7c3aed;
+  border-radius: 16px;
+  display: flex;
+  padding: 64px 100px;
+  gap: 210px;
+}
+.container .pop-ul ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .pop-ul ul li {
+  list-style-type: disc;
+  font-size: 24px;
+}
+.container .man {
+  width: 100%;
+  padding: 113px 100px 70px;
+  color: white !important;
+}
+.container .man h2 {
+  font-size: 48px;
+}
+.container .man-cont {
+  background-color: #7c3aed;
+  border-radius: 18px;
+  position: relative;
+}
+.container .man-cont .abs3 {
+  position: absolute;
+  right: 80px;
+  bottom: 0px;
+}
+.container .man-cont .man-cont-t-content {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 50px;
+}
+.container .man-cont .man-cont-t-content-t-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .man-cont .man-cont-t-content-t-content h2 {
+  font-size: 60px;
+}
+.container .man-cont .man-cont-t-content-t-content p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.container .man-cont .man-cont-t-content-t-content .btns {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 50px 0;
+}
+.container .man .btn-bgr {
+  color: #7c3aed !important;
+  background-color: white !important;
+  margin-right: 40px;
+}
+.container .man .btn-color {
+  color: white !important;
+}
+.container .qa {
+  background-color: #f2f7ff;
+  padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.container .qa h3 {
+  font-size: 48px;
+}
+.container .qa .table {
+  display: flex;
+  gap: 24px;
+}
+.container .qa .table-half {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container .qa .table-half .qw {
+  background-color: white;
+  padding: 24px;
+  border-radius: 14px;
+}
+.container .qa .table-half .qw-vid {
+  display: flex;
+  justify-content: space-between;
+}
+.container .form {
+  display: flex;
+  gap: 129px;
+  padding: 70px 100px;
+}
+.container .form h3 {
+  font-size: 48px;
+}
+.container .form p {
+  font-size: 18px;
+}
+.container .form-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.container .form-left input {
+  border: 1px solid #111827;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+.container .form-left label {
+  padding: 0px 24px 0 14px;
+}
+.container .form-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.container .form-right div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.container .form button {
+  margin-top: 20px;
+  border: 0;
+}
+.container .footer {
+  display: flex;
+  padding: 30px 100px;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f1f3f5;
+}
+.container .footer a {
+  color: black;
+  font-weight: 600;
+}
+.container .footer ul {
+  display: flex;
+  gap: 24px;
+}
+.container .footer-left {
+  display: flex;
+  gap: 24px;
+}
+.container .footer-right {
+  gap: 40px !important;
+}
+
+.active {
+  display: none;
+}
+
+.mob {
+  display: none !important;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .mob {
+    display: block !important;
+  }
+
+  .burgerMenu {
+    display: flex;
+  }
+
+  .header-left {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header-left img {
+    width: 34px !important;
+    height: 34px;
+  }
+  .header ul {
+    display: none;
+  }
+
+  .vacs-cards {
+    flex-direction: column;
+  }
+
+  .header-right {
+    display: none !important;
+  }
+
+  section {
+    padding: 48px 16px !important;
+  }
+
+  .nav-menu {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* Замените цвет фона на ваш выбор */
+    flex-direction: column;
+    padding: 0px 20px 40px;
+    height: 100vh;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .nav-menu li {
+    font-size: 24px;
+  }
+  .nav-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px !important;
+  }
+  .nav-menu .nav-menu-btns {
+    margin-top: 50px;
+  }
+  .nav-menu .nav-menu-btns li {
+    display: flex;
+    margin-top: 30px;
+  }
+  .nav-menu .nav-menu-btns li a {
+    font-size: 16px;
+    width: 100%;
+    text-align: center !important;
+  }
+
+  /* Стили для видимого меню */
+  .show-menu {
+    display: flex !important;
+  }
+
+  .rev {
+    flex-direction: column;
+  }
+  .rev h3 {
+    font-size: 30px !important;
+  }
+  .rev .abs {
+    top: 15px !important;
+    left: 15px !important;
+  }
+  .rev-left {
+    width: 100% !important;
+  }
+  .rev-right {
+    width: 100% !important;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about-left {
+    width: 100% !important;
+    margin-bottom: 40px;
+  }
+  .about-right {
+    width: 100% !important;
+  }
+  .about-right .cards {
+    flex-direction: column;
+  }
+  .about-right .cards .card:first-child {
+    margin-bottom: 40px;
+  }
+
+  .two {
+    height: auto !important;
+  }
+  .two .pred {
+    align-items: center !important;
+  }
+  .two .pred img {
+    height: 80%;
+  }
+  .two .btns {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+  .two .btns a {
+    width: 100%;
+    text-align: center;
+    margin: 0 !important;
+  }
+
+  .table {
+    flex-direction: column;
+  }
+  .table-half {
+    width: 100% !important;
+  }
+  .table-half img {
+    width: 24px;
+    height: 24px;
+  }
+  .table-half .qw {
+    align-items: center;
+  }
+
+  .abs2 {
+    right: 0 !important;
+    top: 526px !important;
+    z-index: -1;
+  }
+
+  .sec {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .how-text {
+    width: 100% !important;
+  }
+  .how-cards {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .pop-ul div:nth-child(2),
+.pop-ul div:nth-child(3) {
+    display: none;
+  }
+
+  .pop-ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .man {
+    padding: 0 !important;
+  }
+  .man .btns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+  .man .btns a {
+    margin: 0 !important;
+  }
+
+  .man-cont {
+    overflow: hidden;
+    border-radius: 0 !important;
+  }
+
+  .man-cont-t-content {
+    padding: 48px 16px 590px !important;
+    width: 100% !important;
+  }
+
+  .abs3 {
+    right: -66px !important;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+  .form-left {
+    width: 100% !important;
+  }
+  .form-right {
+    width: 100% !important;
+  }
+
+  .footer {
+    justify-content: center !important;
+  }
+
+  .footer-left ul {
+    display: none !important;
+  }
+
+  .rev-card:last-child {
+    width: 100% !important;
+  }
+
+  .one {
+    background-image: none !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+  .one .mob {
+    width: 100% !important;
+  }
+
+  .header {
+    padding: 20px 16px !important;
+  }
+
+  .desc {
+    display: none !important;
+  }
+
+  .why {
+    flex-direction: column;
+  }
+  .why-content {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .why img {
+    width: 100% !important;
+  }
+  .why .btns {
+    flex-direction: column;
+    margin-top: 38px !important;
+  }
+  .why .btns a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .first {
+    padding: 24px 16px !important;
+    width: 100% !important;
+  }
+  .first h2 {
+    font-size: 36px !important;
+  }
+  .first .btns {
+    flex-direction: column;
+  }
+  .first .btns a {
+    width: 100%;
+    text-align: center;
+  }
+
+  #burgerMenu {
+    width: 34px !important;
+  }
+}
